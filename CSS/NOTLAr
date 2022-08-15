@@ -1,0 +1,73 @@
+headin içine style etiketleri arasında CSS yazmak özellikleri belirtir.
+selectro kullanarak hangi yere style eklediğimizi belirtiriz.
+ctrl ö yapınca yorum satırı oluyor kod değeri yok
+belirttikten sonra köşeli parantez açılmalı mesela h1{
+    color:red  ;
+} gibi her özellikten sonra ; kullanılmalı
+
+özellik koymanın 2.yöntemi de style.css dosyası açıp kod sayfasına eklemek
+title altına link tab açarak hrefin içine ./style.css yazıcaz.
+iki selektörün özelliklerini aynı yapmak için mesela başlık ve paragrafın
+h1,p {} yapılmalı
+sadece id si logoyu seçmek için #logo{renk,bg  } olmalı
+sadece classı seçmek için . kullanmak gerekir
+id si logo olan ve classı li olanı seçmek için #logo, .lead {} yapılmalı 
+id si para1 ve classı:lead olanı seçmek için #para1.lead{} yapılmalı
+eğer a etiketinde altı çizili olan linklerin çizgilerini silmek istersek a{text-decoration:none;} yazılmalı
+. class demek # id demek
+tüm etiketleri seçmek için *{}
+
+
+genel seçicileri üste özelleri alta yazmalıyız. 
+alttaki üsttekini ezer. ama eğer özelliğin yanına important yazarsak asla değişmez
+eğer iki tane style klasörü eklersek ve iki klasör de aynı elemanı etkiliyorsa son eklenen etkiler.
+
+
+web devoloper toolsta özellikleri görebiliriz.
+
+
+rgb color kodudur(red,green,blue)
+(255, 0, 0) tam kırmızıdır
+oppacity: bulanıklık değeridir
+esinlendiğimiz bir rengi kullanmak için color zilla chrome kullanılırız.
+color:# ve değer yazarak da renk verilebilir.
+background resmin tekrarlanmaması için background-repeat:no-repeat
+pozisyonu için background-position
+pozisyonu sabit kalsın background-attachment:fixed
+
+inline elamanlara kendimiz width ve height veremeyiz
+display:inline-block verince çevresine de tıklanınca link açılıyor.
+
+
+
+border vermek için headin içine style açıp border etiketlerini yazmalıyız.
+border köşelerinin ovalleşmesi border-radius kullanılır
+eğer hight ve radius değeri aynı olursa yuvarlak olur
+
+head arasına *{ margin:0} yapınca int sitesinin oto yaptığı margin kaldırılır.
+margin left ve margin rightı auto yaparsak ortalanır
+letter-spacing harf aralığı ayarlar
+
+linkin üzerine gelince renk değişmesi için style kısmına a:hover{color} yapmalıyız
+henüz tıklanmamış linkin rengi için a:link{} yapılmalı
+daha önceden tıklanmış link rengi a:visited{}
+inline elementlere daha sonradan biçim vermek için display:inline-block kullanılmalı
+paragrafın ilk satırı vb özellikleri vermek için :: kullanılmalı
+
+overflow:taşma özelliğidir bordera sığmayanları içine alır ama gizler.
+overflow:auto gelirse aşağı kaydırmalı gelir
+
+position:fixed yaparsak pozisyonu hep sabit kalır.
+position:releative bulunduğu yerden kayma
+z-index hangisi büyükse o önde gözükür - verilirse arkada olur.
+position:absolute kapsayıcıya göre 
+
+
+FLEXBOX
+justify-content=yatayda dizilimi ayarlar
+align-items=dikeyde dizilimi ayarlar.
+flex-weap= width değiştirme sığdırmak için aşağı taşı
+min-height=taşma yapmayı engellemek
+flex-direction:Column = yatay ve dikey özellikleri terse dönüyor.
+align-self= kendi özelliğini belirler
+

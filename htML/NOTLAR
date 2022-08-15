@@ -1,0 +1,93 @@
+Yazmaya <html> yazarak başlıyoruz alt satıra ikincisi geliyor ve yazının sonu oluyor
+   1.kısım head kısmı olucak bunun içinde web sayfanın içeriğinde gözükmeyecek sadece sayfamızı tanımlayan etiketlerden oluşacak.mesela başlık 
+   2.kısım body kısmı olacak bu kısımda web sayfamızın içeriği yazılacak. web sayfamızdaki içerikler burada
+   head kısmının arasına title yazarak başlık koyabiliriz.
+   UTF-8 türkçe karakter
+   meta etiketi içinde türkçe karakter
+   body içine h1 etiketi koyarsak bu bizim başlığımız oluyor.
+   heddin(h) h1 en büyük başlıktır en küçük başlık h6 dır numarasu arttıkça büyüklüğü azalır.
+başlığın altına paragraf yazmak için p etiketini açıp iki p arasına yazılan her şey bizim paragrafımız olacak.paragraf bitince bir p etiketi daha açıp yeni paragraf yazabiliriz
+lorem 10 veya lorem 100 yazınca o kelime sayısınca örnek paragraf
+paragtafta satırbaşı yapmak için kelimenin sonuna br etiketi koyabiliriz
+iki paragraf arasına düz çizgi koymak için iki paragraf arasına hr etiketi gelmeli
+sayfanın arka planını mavi yapmak için css kullanmak gerekiyor
+arka plan için bodye style=background-color yazmak gerekiyor
+başlık için h1 kullanıyorduk başığın rengini değiştirmek iiçin h1 etiketi içine style=color: yazmak gerekiyor.
+başlığın boyutunu değiştirmek için rengin sonuna ; koyup font-size: yazıp istediğimiz px yazarız.
+
+
+kelimenin kalın yazılmasını istiyorsak loremden sonra strong etiketi açıp arasına kelimeyi yazmalıyız.
+italik yazı karakteri için em etiketi
+kelimenin daha küçük gözükmesi için small etiketini
+vurgulamak için mark etiketi
+
+paragraf değil de şiir gibi kıtalı şeyler için pre etiketi kullanılmalı
+diğer etiketleri bulmak için w3schools sayfasına bakılabilir
+
+
+
+link vermek için body içine a etiketi yazılmalı
+linki farklı sekmede açmak için linkten sonra target="_blank yazılmalı"
+linkle title vermek için target dan sonra title=.... eklenmeli
+vs deki kendi sekmelerimize gitmek için link yazınca href="..." kendi dökümanımızın adını yazıcaz
+
+
+fotoğraf eklemek için body e img etiketi kullanılır kapanmayan etikettir.
+boyutu kendimiz ayarlamak için en için width= yükseklik için height etiketi kullanılmalı sadece biri kullanılırsa ikisi de aynı ölçüde oluyor
+alt etiketi kullanılırsa belli bir sorundan dolayı resim gözükmediği durumda resmi belirtmek için.
+fotoğrafımıza basınca sayfa açılması için link verilebilir a etiketi ile sonra a etiketi arası fotorafın linkini img ile verince fotoğraf linke dönüşür.
+
+
+tablo oluşturmak için table etiketi
+tablonun başlık satırı içi tr etiketi
+başlıkların koyu yazılması için th etiketi
+tablonun içeriği için tekrar tr etiketi açıp td etiketi ile değerler eklenir
+tabloya kçşe vermek için head etiketi üzerine style etiketi açıp table,th,td {border:1px solid } yazılmalı
+td etiketine style=color: yazılıp arka plan için renkten sonra noktalı virgül koyup bgcolor=renk yazılmalı
+kelimeyi italik yapmak için i etiketi arasına yaz
+
+html5 liste iki biçimi var unordered lists(sırasız) ordered lists(sıralı)
+liste oluşturmak için ul etiketi  unordered için
+liste elemanları için li etiketi
+ul nin içine type etiketi yapınca maddelerin biçimi şekli kendimiz belirliyoruz
+sıralı listde ol etileti
+sıralı listede maddenin nerden başlamasını belirtmek için ol içine sayı için start= , harf için type=
+
+sayfaya video eklemek için video etiketi
+videoyu eklemek için dosyaya klasör eklemek gerekiyor
+linki ekledikten sonra çalışması için controls autoplay yazılmalı
+videonun boyutunu width yaz ayarla
+
+
+block level elemanları bulunduğu bloğun genişlği olarak hepsini kapsar
+inline elemanları ise sadece içeriği kadar yer kapsayan elemanlardır 
+height ve width ayarı sadece block level elemanlarda ayarlanabilir inlindeda ayarlanamaz
+
+
+Div ve span html de başka html elementlerini gruplamak için kullanılır 
+Div block level span ise inline level bir elementtir
+
+Id ve class benzer şeylerdir. Css çok işe yarar. sayfadaki belli blogları bloklamak ve stillemek için kullanılır.
+Id mesela navigationda(navbar) kullanılabilir. navigation id başka bir elemana vermemek gerekir.
+class görünümleri stilleri yapmak için kullanılır 
+bir divin hem id hem classı olabilir.
+
+sayfamızın içinden link vermek için a etiketi içine href=#... yazılabilir
+
+
+ınput alanları yazı yazabildiğimiz veya parola girebildiğimiz alanlardır.
+inputa fokuslanmak için yazıyı label etiketi içerisine yazmalıyız inputun içine de id yazmamız gerekir
+submit butonu eklemek için input type="submit" yazmak gerekir submite isim vermek için inputun içine value=... yazmak gerekir 
+checkbox ile birden fazla seçim yapılabilir
+eğer sayfayı yenileyince seçtiğimiz otomatik işaretlensin istiyorsak yanına checked yazılmalı
+
+seçenek sunmak için select etiketi kullanılacak
+selectin altına option etiketi  ile seçenekler açılacak
+seçeneğimizin yanına required yazarsa işaretlemeyince hata verecek
+seçtiğimiz seçenek sayfa yenilenince oto olarak seçilmesi için yanına selected yazılır
+mesaj kutusu oluşturmak için textarea etiketi açıp name ve id içine message yazılmalı
+row(satır) cols(sütun) belirterek mesaj kutusu boyutu belirleyebiliriz. 
+mesaj kutusuna geçiçi yazı eklemek için placeholder ekleyebiliriz
+
+
+

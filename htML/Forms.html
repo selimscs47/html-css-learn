@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Form ve Inputs</title>
+
+<style>
+    body{
+        margin:0;
+    padding:0;
+    background:url("./okyanus/ok-990x556.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+label { 
+    color:darkblue;
+    font-size:0.6cm ;
+}
+
+</style>
+
+</head>
+<body">
+
+<form >
+    <div style="text-align: center; ">
+        <!--HTML5 Input-->
+        <h1 style="color:rgb(255, 77, 0)  ; font: size 15px; ;"><i><em><u>Kullanıcı Girişi</u></em></i></h1>
+        <div style="padding-bottom:1% ;">
+            <label  for="name" style="; font-size:  0.6cm ; ">Name</label> <br />
+            <input  style="height: 20px; " type="text" placeholder="Your Name" id="name" name="name" /> <br />
+            
+        </div>
+
+        
+    
+        <label for="email" style=" font-size:0.6cm "> Email</label> <br>
+    <input style="height: 20px;  type:"email" placeholder="Your Mail" id="email" name="email"  /> <br/>
+    
+    <label for="password" style=" font-size: 0.6cm;">Password</label >  <br/>
+    <input style="height: 20px;  type="password" placeholder="Password" id="password" name="password"> <br>
+    
+    <div style="padding-bottom: 2.6%;">
+    <label for="date" style= color:"red"; font-size:0.6cm >Date</label> <br>
+    <input  type="date" name="date"> <br>
+    </div>
+    
+    <div style="padding-bottom:2.6%;">
+     <label for="Gender"  ">Gender</label>    <br>
+        Male 
+        <input  type="radio" name="gender" value="male">
+            Female 
+            <input type="radio" name="gender" value="female"  />
+            Other
+            <input type="radio" name="gender" value="Other"> <br>
+
+    </div>
+
+        <div style="padding-bottom:2.6% ;">
+        <label for="Hobbies">Hobbies</label> <br>
+        Technology
+        <input type="checkbox" name="social media" id="social media">
+        Sports
+        <input type="checkbox" name="football" id="football"  >
+        Music
+        <input type="checkbox" name="rap" id="rap"> <br>
+       </div>
+
+<div style="padding-bottom:2.6% ;">       
+        <label for="Degree">Degree</label> <br>
+        
+        <select  name="degree" id="gree">
+            <option value="bachelor">Lisans</option> 
+            <option value="msc">Yüksek Lisans</option>
+            <option value="phd">Doktora</option>
+        
+        </select>
+        
+        <br />
+</div>
+<div style="padding-bottom:2.6% ;">
+        <textarea name="message" id="message" rows="5" cols="30" placeholder="your message" ></textarea> <br>
+</div>
+        <div style="font-size:20px ; padding-bottom: 2.6%;">
+        Sözleşmeyi Kabul Ediyorum
+        <input type="radio" name="Sözleşmeyi Kabul Ediyorum" value="Sözleşmeyi Kabul Ediyorum" required> <br>
+        </div>
+
+       <input style="color:yellow ; background-color: black;" type="reset" value="Sıfırla" />
+        <input style="color:blue ; background-color: black;" type="submit" value="Gönder" />
+        
+
+
+    </div>
+    </form>
+    
+</body>
+</html>
